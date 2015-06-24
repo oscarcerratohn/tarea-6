@@ -1,4 +1,7 @@
 Tarea::Application.routes.draw do
+  resources :libros
+
+
   resources :movies
 
 

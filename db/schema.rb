@@ -11,11 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150624185939) do
+ActiveRecord::Schema.define(:version => 20150624202510) do
 
   create_table "carteleras", :force => true do |t|
     t.string   "pelicula"
     t.string   "rating"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "libros", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "rating"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
